@@ -25,7 +25,8 @@ putchar(k);
 if (i == 55 && j == 56 && k == 57)
 {
 }
-else{
+else
+{
 putchar(',');
 putchar(' ');
 }
