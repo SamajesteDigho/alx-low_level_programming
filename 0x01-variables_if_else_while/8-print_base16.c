@@ -13,7 +13,8 @@ int main(void)
 int i;
 for (i = 48; i < 64; i++)
 {
-if (i <= 57){
+if (i <= 57)
+{
 putchar(i);
 }
 else
