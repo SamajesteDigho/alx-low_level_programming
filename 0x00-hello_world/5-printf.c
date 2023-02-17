@@ -1,5 +1,11 @@
 #include <stdio.h>
-/* Here is the main function */
+/* Here is the main function *//**
+ * main - Entry point
+ *
+ * Description: 'the program's description'
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 printf("with proper grammar, but the outcome is a piece of art,\n");
