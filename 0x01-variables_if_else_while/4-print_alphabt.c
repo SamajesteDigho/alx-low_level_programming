@@ -4,16 +4,16 @@
 /**
  * main - Entry point
  *
- * Description: 'Print alphabet in lowercase except q and e followed by a new line.'
+ * Description: 'Print alphabet in lowercase except q and e.'
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 int i;
-for(i = 97; i <= 122; i++)
+for (i = 97; i <= 122; i++)
 {
-if(i != 'e' && i != 'q')
+if (i != 'e' && i != 'q')
 {
 putchar(i);
 }
