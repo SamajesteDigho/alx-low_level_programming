@@ -1,5 +1,6 @@
 #include <stdio.h>
-/* Here is the main function *//**
+/**
+ * Here is the main function *//**
  * main - Entry point
  *
  * Description: 'the program's description'
