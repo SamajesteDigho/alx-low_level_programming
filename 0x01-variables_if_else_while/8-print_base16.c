@@ -19,7 +19,7 @@ putchar(i);
 }
 else
 {
-putchar(96 + (i-57));
+putchar(96 + (i - 57));
 }
 }
 putchar('\n');
