@@ -4,7 +4,8 @@
 /**
  * main - Entry point
  *
- * Description: 'Print alphabet in lowercase then in uppercase followed by a new line.'
+ * Description: 'Print alphabet in lowercase then in uppercase
+        followed by a new line.'
  *
  * Return: Always 0 (Success)
  */
