@@ -15,9 +15,9 @@ for(i = 48; i < 58; i++)
 {
 for(j = 48; j < 58; j++)
 {
-for(k = i; k < 58; k++)
+for(k = 48; k < 58; k++)
 {
-for(l = j; l < 58; l++)
+for(l = j+1; l < 58; l++)
 {
 if(i == j && j == k && k == l)
 {
