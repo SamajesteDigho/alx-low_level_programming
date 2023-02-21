@@ -1,5 +1,3 @@
-void _putchar(int c){
-    putchar(c);
-}
+void _putchar(int c)
 
 void print_alphabet(void);
