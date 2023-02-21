@@ -16,4 +16,5 @@ _putchar(48 + n % 10);
 else{
 _putchar(48 + (n * -1) % 10);
 }
+return (0);
 }
