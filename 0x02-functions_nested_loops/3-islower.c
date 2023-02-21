@@ -2,6 +2,8 @@
 /**
  * _islower - Lower case
  *
+ * @parameterc: c is the parameter
+ *
  * Description: A program that prints the alphabet
  */
 int _islower(int c)
