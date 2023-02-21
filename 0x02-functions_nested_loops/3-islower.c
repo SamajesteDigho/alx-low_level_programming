@@ -2,9 +2,11 @@
 /**
  * _islower - Lower case
  *
- * @parameterc: c is the parameter
+ * @c: c is the parameter
  *
  * Description: A program that prints the alphabet
+ *
+ * Return Either 0 or 1
  */
 int _islower(int c)
 {
