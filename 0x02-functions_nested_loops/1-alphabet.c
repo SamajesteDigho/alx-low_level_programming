@@ -3,8 +3,6 @@
  * print_alphabet - Alphabet printing
  *
  * Description: A program that prints the alphabet
- *
- * Return: Always 0 (Success)
  */
 void print_alphabet(void)
 {
