@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet
+ * print_alphabet - Alphabet printing
  *
  * Description: A program that prints the alphabet
  *
