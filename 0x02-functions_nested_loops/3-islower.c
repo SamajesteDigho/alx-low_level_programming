@@ -6,7 +6,7 @@
  *
  * Description: A program that prints the alphabet
  *
- * Return Either 0 or 1
+ * Return: Either 0 or 1
  */
 int _islower(int c)
 {
