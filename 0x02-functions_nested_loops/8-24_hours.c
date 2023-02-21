@@ -5,7 +5,7 @@
  *
  * Description: A program that prints the alphabet
  */
-void jack_bauer()
+void jack_bauer(void)
 {
 int i, j, k, l;
 for (i = 0; i < 3 ; i++)
