@@ -2,7 +2,7 @@
 /**
  * _abs - Absolute number o integer
  *
- * @c: c is the parameter
+ * @n: n is the parameter
  *
  * Description: A program that prints the alphabet
  *
@@ -10,7 +10,7 @@
  */
 int _abs(int n)
 {
-if (c >= 0)
+if (n >= 0)
 {
 return (n);
 }

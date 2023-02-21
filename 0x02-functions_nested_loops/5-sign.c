@@ -2,7 +2,7 @@
 /**
  * print_sign - Sign of number
  *
- * @c: c is the parameter
+ * @n: n is the parameter
  *
  * Description: A program that prints the alphabet
  *
