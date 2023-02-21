@@ -1,9 +1,8 @@
-#include <stdio.h>
 #include "main.h"
 /**
  * main - Entry point
  *
- * Description: 'A program that prints the alphabet'
+ * Description: A program that prints the alphabet
  *
  * Return: Always 0 (Success)
  */
