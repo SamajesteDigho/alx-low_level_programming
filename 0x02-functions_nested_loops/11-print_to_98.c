@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_to_98 - print last digit
  * @n : parameter
@@ -8,11 +9,20 @@
 int print_to_98(int n)
 {
 int i;
-for (i = n; i < 99; i++)
+if(n > 98)
 {
-_putchar(48 + i);
-_putchar(',');
-_putchar(' ');
+for (i = n; i <= 98; i--)
+{
+printf('%d, ', i);
 }
+}
+else
+{
+for (i = n; i >= 98; i++)
+{
+printf('%d, ', i);
+}
+}
+putchar('\n');
 return (0);
 }
