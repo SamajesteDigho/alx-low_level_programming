@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * _isupper: Short description
- * @c: Function parameter
+ * _isupper : Short description
+ * @c : Function parameter
  * Description : Fonction full description
- * Return: Return value description
+ * Return : Return value description
  */
 int _isupper(int c)
 {
