@@ -15,7 +15,8 @@ if(n >= 0){
 i = (n % 10);
 _putchar(48 + i);
 }
-else{
+else
+{
 i = ((n * -1) % 10);
 _putchar(48 + i);
 }
