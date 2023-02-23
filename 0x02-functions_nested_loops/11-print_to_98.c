@@ -8,7 +8,7 @@
 int print_to_98(int n)
 {
 int i;
-for(i = n; i < 99)
+for (i = n; i < 99; i++)
 {
 _putchar(48 + i);
 _putchar(',');
