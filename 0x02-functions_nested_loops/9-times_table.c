@@ -11,7 +11,7 @@ for (i = 0; i < 10 ; i++)
 {
 for (j = 0; j < 10 ; j++)
 {
-if(i * j >= 10)
+if (i * j >= 10)
 {
 _putchar(48 + ((i * j) / 10));
 _putchar(48 + ((i * j) % 10));
