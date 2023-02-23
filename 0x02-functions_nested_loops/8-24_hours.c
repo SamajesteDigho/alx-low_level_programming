@@ -15,7 +15,7 @@ for (k = 0; k < 6 ; k++)
 {
 for (l = 0; l < 10 ; l++)
 {
-if(i * 10 + j < 24)
+if (i * 10 + j < 24)
 {
 _putchar(48 + i);
 _putchar(48 + j);
