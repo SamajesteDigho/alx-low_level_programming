@@ -7,27 +7,22 @@
  */
 int main(void)
 {
-long int fb1, fb2, res;
+long int fb1, fb2, res, final;
 fb1 = 1;
-fb2 = 2;
-res = fb1 + fb2;
-
-printf("1, 2, %ld, ", res);
+fb2 = 1;
+res = 0;
+final = 0;
 while (res <= 4000000)
 {
-fb1 = fb2;
-fb2 = res;
 res = fb1 + fb2;
 if (res % 2 == 0)
 {
-if (res < 4000000)
-{
-putchar(',');
-putchar(' ');
+final += res;
 }
-printf("%ld", res);
+fb1 = fb2;
+fb2 = res;
 }
-}
-printf("\n");
+printf("%ld\n", final);
+
 return (0);
 }
