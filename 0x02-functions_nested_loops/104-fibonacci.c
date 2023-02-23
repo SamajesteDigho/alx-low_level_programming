@@ -15,7 +15,8 @@ for (i = 0; i < 98; i++)
 {
 fbn = fb1 + fb2;
 printf("%.0f", fbn);
-if (i != 98) {
+if (i != 98)
+{
 printf(", ");
 }
 fb1 = fb2;
