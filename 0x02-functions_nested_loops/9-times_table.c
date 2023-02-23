@@ -1,9 +1,14 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * times_table - print last digit
  *
  * Description: A program that prints the alphabet
  */
+void _putchar(int c)
+{
+putchar(c);
+}
 void times_table(void)
 {
 int i, j;
@@ -18,7 +23,10 @@ _putchar(48 + ((i * j) % 10));
 }
 else
 {
+if (i != 0)
+{
 _putchar(' ');
+}
 _putchar(48 + ((i * j) % 10));
 }
 if (j != 9)
@@ -29,4 +37,10 @@ _putchar(' ');
 }
 _putchar('\n');
 }
+}
+
+int main(void)
+{
+	times_table();
+	return (0);
 }
