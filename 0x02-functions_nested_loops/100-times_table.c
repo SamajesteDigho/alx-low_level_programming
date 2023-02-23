@@ -1,16 +1,9 @@
 #include "main.h"
-#include <stdio.h>
 /**
  * print_times_table - print last digit
  * @n : parameter
  * Description: A program that prints the alphabet
  */
-
-void _putchar(int c)
-{
-putchar(c);
-}
-
 void print_times_table(int n)
 {
 int i, j;
@@ -55,10 +48,4 @@ _putchar(' ');
 }
 _putchar('\n');
 }
-}
-
-int main()
-{
-print_times_table(98);
-return (0);
 }
