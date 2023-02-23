@@ -10,7 +10,6 @@ int i, j;
 
 if (n < 0 || n > 15)
 {
-_putchar('\n');
 return ;
 }
 for (i = 0; i < n + 1 ; i++)
