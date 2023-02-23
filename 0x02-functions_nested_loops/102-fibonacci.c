@@ -8,12 +8,19 @@
 int main(void)
 {
 int i;
+long int fb1, fb2, res;
+fb1 = 1;
+fb2 = 2;
+
 printf("1, 2, ");
-for(i = 3; i < 10; i++)
+for(i = 3; i < 50; i++)
 {
-printf("%d, ", fibonacci(i));
+res = fb1 + fb2;
+printf("%ld, ", res);
+fb1 = fb2;
+fb2 = res;
 }
-printf("%d\n", fibonacci(50));
+printf("%ld\n", fb1 + fb2);
 return (0);
 }
 
@@ -25,11 +32,11 @@ return (0);
  */
 int fibonacci(int n)
 {
-if(n == 0)
+if (n == 0)
 {
 return (0);
 }
-if(n == 1 || n == 2)
+if (n == 1 || n == 2)
 {
 return (1);
 }
