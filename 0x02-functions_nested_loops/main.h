@@ -23,3 +23,5 @@ int add(int, int);
 int print_to_98(int n);
 
 void print_times_table(int n);
+
+int is_multiple_of_3_or_5(int n);
