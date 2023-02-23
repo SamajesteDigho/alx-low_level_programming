@@ -6,7 +6,7 @@
  * Description : Fonction full description
  * Return: Return value description
  */
-int mul(int a, int b);
+int mul(int a, int b)
 {
 return (a * b);
 }
