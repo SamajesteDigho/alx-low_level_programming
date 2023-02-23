@@ -8,7 +8,7 @@
 int main(void)
 {
 int i;
-float fb1, fb2, fbn;
+double fb1, fb2, fbn;
 fb1 = 0;
 fb2 = 1;
 for (i = 0; i < 98; i++)
