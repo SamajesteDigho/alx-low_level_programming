@@ -15,7 +15,6 @@ if (i * j >= 10)
 {
 _putchar(48 + ((i * j) / 10));
 _putchar(48 + ((i * j) % 10));
-
 }
 else
 {
