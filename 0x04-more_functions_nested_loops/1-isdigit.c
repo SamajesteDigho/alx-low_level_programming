@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _isdigit: Short description
+ * _isdigit - Short description
  * @c: Function parameter
  * Description : Fonction full description
  * Return: Return value description
