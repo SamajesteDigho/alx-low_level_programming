@@ -2,7 +2,6 @@
 /**
  * _isupper - Short description
  * @c : Function parameter
- * Description : Fonction full description
  * Return : Return value description
  */
 int _isupper(int c)
