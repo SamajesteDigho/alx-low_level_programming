@@ -1,8 +1,9 @@
 #include "main.h"
 /**
- * print_triangle : Short description
+ * print_triangle - Short description
  * @size : Function parameter
  * Description : Fonction full description
+ * Return: Nothing
  */
 void print_triangle(int size)
 {

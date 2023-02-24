@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main : Short description
+ * main - Short description
  * Description : Fonction full description
  * Return: Always return 0.
  */
