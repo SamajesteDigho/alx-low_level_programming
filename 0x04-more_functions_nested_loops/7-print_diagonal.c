@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_diagonal : Short description
+ * print_diagonal - Short description
  * @n: Function parameter
- * Description : Fonction full description
  */
 void print_diagonal(int n)
 {

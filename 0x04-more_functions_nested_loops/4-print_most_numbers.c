@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * print_most_numbers: Short description
- * Description : Fonction full description
+ * print_most_numbers - Short description*
  */
 
 void print_most_numbers(void)

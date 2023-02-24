@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * more_numbers: Short description
- * Description : Fonction full description
+ * more_numbers - Short description
  */
 void more_numbers(void)
 {

@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_line : Short description
+ * print_line - Short description
  * @n: Function parameter
- * Description : Fonction full description
  */
 void print_line(int n)
 {

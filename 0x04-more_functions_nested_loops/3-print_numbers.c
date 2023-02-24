@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * print_numbers : Short description
- * Description : Fonction full description
+ * print_numbers - Short description
  */
 void print_numbers(void)
 {
