@@ -19,13 +19,3 @@ _putchar(48 + (j % 10));
 _putchar('\n');
 }
 }
-
-void _putchar(int c)
-{
-putchar(c);
-}
-int main(void)
-{
-    more_numbers();
-    return (0);
-}
