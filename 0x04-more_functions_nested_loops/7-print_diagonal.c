@@ -2,6 +2,7 @@
 /**
  * print_diagonal - Short description
  * @n: Function parameter
+ * Return: Nothing
  */
 void print_diagonal(int n)
 {
