@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - string length
- * @str : parameter
+ * @s : parameter
  * Description: Describing the function
  */
 void print_rev(char *s)
