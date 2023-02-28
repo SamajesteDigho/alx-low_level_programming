@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_rev - string length
+ * rev_string - string length
  * @s : parameter
  * Description: Describing the function
  */
@@ -14,6 +14,5 @@ for (j = 0; j < i / 2; j++)
 n = s[i - j - 1];
 s[i - j - 1] = s[j];
 s[j] = n;
-}
 }
 }
