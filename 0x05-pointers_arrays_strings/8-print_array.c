@@ -16,5 +16,4 @@ if (i + 1 != n)
 printf(", ");
 }
 }
-_putchar('\n');
 }
