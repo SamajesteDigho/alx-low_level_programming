@@ -7,7 +7,8 @@
  */
 int _atoi(char *s)
 {
-int i, l, a, b, n, isn;
+int i, l, a, b, isn;
+float n;
 l = strlen(s);
 a = 0;
 b = 0;
