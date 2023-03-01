@@ -19,6 +19,6 @@ for (i = 0; i < nb; i++)
 {
 pass[i] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ !.*-_+0123456789"[rand() % 43];
 }
-printf("%s\n", pass);
+printf("Tada! Congrats");
 return (0);
 }
