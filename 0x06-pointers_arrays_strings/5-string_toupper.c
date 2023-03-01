@@ -5,7 +5,7 @@
  * Description: Describing the function
  * Return: Return a string
  */
-char *string_toupper(char * s)
+char *string_toupper(char *s)
 {
 int i, j;
 j = strlen(s);
