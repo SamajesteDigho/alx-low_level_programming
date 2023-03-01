@@ -10,7 +10,7 @@ char *_strcpy(char *dest, char *src)
 {
 int i, j;
 i = strlen(src);
-_memset(dest, 0, strlen(dest));
+memset(dest, 0, strlen(dest));
 for (j = 0; j < i; j++)
 {
 dest[j] = src[j];
