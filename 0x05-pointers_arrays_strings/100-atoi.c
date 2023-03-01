@@ -41,12 +41,3 @@ n *= -1;
 }
 return (n);
 }
-
-int main(void)
-{
-	int n;
-
-	n = _atoi("2147483647");
-	printf("%d\n", n);
-	return (0);
-}
