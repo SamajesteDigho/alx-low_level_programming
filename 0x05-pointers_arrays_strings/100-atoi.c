@@ -8,7 +8,7 @@
 int _atoi(char *s)
 {
 int i, l, a, b, isn;
-float n;
+double n;
 l = strlen(s);
 a = 0;
 b = 0;
@@ -40,4 +40,13 @@ if (isn % 2 == 1)
 n *= -1;
 }
 return (n);
+}
+
+int main(void)
+{
+	int n;
+
+	n = _atoi("2147483647");
+	printf("%d\n", n);
+	return (0);
 }
