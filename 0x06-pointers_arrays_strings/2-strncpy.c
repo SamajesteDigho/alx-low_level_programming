@@ -9,7 +9,7 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-int i, j, end;
+int i, end;
 end = strlen(src);
 if (n <= end)
 {
