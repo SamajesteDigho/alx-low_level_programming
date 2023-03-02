@@ -19,5 +19,5 @@ s[i] = 65 + (s[i] - 97);
 s[i] = s[i];
 }
 }
-return s;
+return (s);
 }
