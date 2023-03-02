@@ -6,9 +6,26 @@
  */
 void print_number(int n)
 {
-
+int val, degree, index;
+char res[];
+val = n;
+index = 0;
+degree = 10;
+res[0] = "";
+while ((val / degree) != 0)
+{
+res[index] = val - (val / degree);
+index++;
+val = val / degree;
+degree = degree * 10;
+}
+printf("%s", res);
 }
 
+void _putchar(int c)
+{
+putchar(c);
+}
 
 int main(void)
 {
