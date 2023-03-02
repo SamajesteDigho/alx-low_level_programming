@@ -24,8 +24,7 @@ for (i = 0; i < j; i++)
 {
 if (s1[i] != s2[i])
 {
-score = s1[i] - s2[i];
-break;
+return (s1[i] - s2[i]);
 }
 }
 return (score);
