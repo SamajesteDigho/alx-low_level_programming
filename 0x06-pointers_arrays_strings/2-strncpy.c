@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *_strncpy - resetting
+ * _strncpy - resetting
  * @dest : parameter
  * @src : parameter
  * @n : parameter
