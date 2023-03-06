@@ -24,7 +24,7 @@ printf("%d, %d\n", l_diag, r_diag);
 }
 
 
-int main(void)
+/*int main(void)
 {
     int c3[3][3] = {
         {0, 1, 5},
@@ -41,4 +41,4 @@ int main(void)
     print_diagsums((int *)c3, 3);
     print_diagsums((int *)c5, 5);
     return (0);
-}
+}*/
