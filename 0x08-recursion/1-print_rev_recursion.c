@@ -21,12 +21,15 @@ read_from_pos(s, pos - 1);
 
 /**
  * _print_rev_recursion - Function name
- * @s : Parameter 1
- * Description : Function full description
+ * @s: Parameter 1
+ * Description: 'Function full description'
  */
 void _print_rev_recursion(char *s)
 {
 int a;
 a = strlen(s) - 1;
+if (a != 0)
+{
 read_from_pos(s, a);
+}
 }
