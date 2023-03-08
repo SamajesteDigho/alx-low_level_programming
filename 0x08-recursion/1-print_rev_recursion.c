@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * read_from_pos - Function name
  * @s: Parameter 1
