@@ -16,7 +16,7 @@ pb = 0;
 p = NULL;
 if (strlen(needle) == 0)
 {
-return haystack;
+return (haystack);
 }
 for (i = 0; i < n1; i++)
 {
@@ -43,4 +43,16 @@ break;
 }
 }
 return (p);
+}
+
+
+int main(void)
+{
+	char *s = "First, solve the problem. Then, write the code.";
+	char *f = "";
+	char *t;
+
+	t = _strstr(s, f);
+	printf("%s\n", (t == NULL ? "nil" : t));
+	return (0);
 }
