@@ -10,13 +10,9 @@
  */
 int comparer(char *s1, char *s2, int p1, int p2)
 {
-    if (s1[p1] == '\0')
+    if (s1[p1] == '\0' && s2[p2] == '\0')
     {
-        if (s2[p2] == '\0')
-        {
         return (1);
-        }
-        return (0);
     }
     if (s1[p1] == s2[p2])
     {
