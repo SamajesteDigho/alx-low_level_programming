@@ -2,8 +2,8 @@
 /**
  * factorial - Function name
  *
- * Description : 'Function full description'
- * @n : Parameter 1
+ * Description: 'Function full description'
+ * @n: Parameter 1
  *
  * Return: factorial of n
  */
