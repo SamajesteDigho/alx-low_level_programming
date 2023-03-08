@@ -13,7 +13,7 @@ float mid;
 if (a <= b)
 {
 mid = (a + b) / 2;
-if ((mid * mid) == x)
+if (mid * mid == x)
 {
 return (mid);
 }
