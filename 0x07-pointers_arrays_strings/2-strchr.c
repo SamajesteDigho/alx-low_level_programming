@@ -3,7 +3,7 @@
  * _strchr - Function name
  * @s: Parameter 1
  * @c: Parameter 2
- * Description: Function description
+ * Description: 'Function description'
  * Return: Return value is char pointer
  */
 char *_strchr(char *s, char c)
