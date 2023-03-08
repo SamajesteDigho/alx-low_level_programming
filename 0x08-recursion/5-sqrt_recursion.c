@@ -7,14 +7,8 @@
  */
 int _sqrt_recursion(int n)
 {
-int i, a;
-a = (n + 1) / 2;
-for (i = 1; i <= a; i++)
+if (n == 0 || n == 1)
 {
-if (i * i == n)
-{
-return (i);
+    re
 }
-}
-return (-1);
 }
