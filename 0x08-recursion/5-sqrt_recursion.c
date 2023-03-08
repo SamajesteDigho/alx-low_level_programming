@@ -13,11 +13,11 @@ float mid;
 if (a <= b)
 {
 mid = (a + b) / 2;
-if (mid * mid == x)
+if (mid *mid == x)
 {
 return (mid);
 }
-else if (mid * mid < x)
+else if (mid *mid < x)
 {
 return (_search_sqrt(x, mid + 1, b));
 }
