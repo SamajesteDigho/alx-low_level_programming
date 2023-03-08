@@ -1,4 +1,24 @@
 #include "main.h"
+
+/**
+ * _print_rev_recursion - Function name
+ * @s: Parameter 1
+ * @pos: Parameter 2
+ * Description: 'Function full description'
+ */
+void read_from_pos(char *s, int pos)
+{
+if (pos == 0 || s[pos] == '\n')
+{
+putchar('\n');
+}
+else
+{
+putchar(s[pos]);
+read_from_pos(s, pos - 1);
+}
+}
+
 /**
  * _print_rev_recursion - Function name
  * @s : Parameter 1
@@ -8,20 +28,5 @@ void _print_rev_recursion(char *s)
 {
 int a;
 a = strlen(s) - 1;
-if (a == 0)
-{
-putchar('\n');
-}
-else
-{
-putchar(s[a]);
-memset(&s[a - 1], 0, 0);
-_print_rev_recursion(s);
-}
-}
-
-int main(void)
-{
-    _print_rev_recursion("\nColton Walker");
-    return (0);
+read_from_pos(s, a);
 }
