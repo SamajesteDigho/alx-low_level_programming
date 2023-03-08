@@ -5,7 +5,6 @@
  * Description : Function full description
  * Return : Return the string length
  */
-
 int _strlen_recursion(char *s)
 {
 if (*s == '\0' || *s == '\n')
