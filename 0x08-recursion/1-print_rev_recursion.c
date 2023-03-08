@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _print_rev_recursion - Function name
+ * read_from_pos - Function name
  * @s: Parameter 1
  * @pos: Parameter 2
  * Description: 'Function full description'
