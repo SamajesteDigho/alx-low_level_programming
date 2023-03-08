@@ -15,15 +15,15 @@ if (a <= b)
 mid = (a + b) / 2;
 if ((mid * mid) == x)
 {
-return mid;
+return (mid);
 }
 else if (mid * mid < x)
 {
-return _search_sqrt(x, mid + 1, b);
+return (_search_sqrt(x, mid + 1, b));
 }
 else
 {
-return _search_sqrt(x, a, mid - 1);
+return (_search_sqrt(x, a, mid - 1));
 }
 }
 return (-1);
