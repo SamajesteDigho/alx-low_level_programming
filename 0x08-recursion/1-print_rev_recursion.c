@@ -33,10 +33,3 @@ if (a > 0)
 read_from_pos(s, a);
 }
 }
-
-
-int main(void)
-{
-    _print_rev_recursion("\nColton Walker");
-    return (0);
-}
