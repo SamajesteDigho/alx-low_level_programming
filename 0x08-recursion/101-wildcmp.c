@@ -31,7 +31,7 @@ if (s1[p1 + 1] == s2[p2 + 1])
 {
 return (comparer(s1, s2, p1 + 1, p2 + 1));
 }
-else if(s1[p1 + 1] == '\0')
+else if (s1[p1 + 1] == '\0')
 {
 if (s2[p2 + 1] != '\0')
 {
