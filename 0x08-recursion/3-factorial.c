@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _strlen_recursion - Function name
+ * factorial - Function name
  * @n : Parameter 1
  * Description : 'Function full description'
  * Return : Return factorial
