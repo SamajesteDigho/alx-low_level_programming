@@ -14,6 +14,10 @@ n1 = strlen(haystack);
 n2 = strlen(needle);
 pb = 0;
 p = NULL;
+if (strlen(needle) == 0)
+{
+return haystack;
+}
 for (i = 0; i < n1; i++)
 {
 if (haystack[i] == needle[0] && (n1 - i) >= n2)
@@ -39,4 +43,16 @@ break;
 }
 }
 return (p);
+}
+
+
+int main(void)
+{
+	char *s = "First, solve the problem. Then, write the code.";
+	char *f = "";
+	char *t;
+
+	t = _strstr(s, f);
+	printf("%s\n", (t == NULL ? "nil" : t));
+	return (0);
 }
