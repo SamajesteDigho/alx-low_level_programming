@@ -5,7 +5,7 @@
  * Description : 'Function full description'
  * @n : Parameter 1
  *
- * Return : factorial of n
+ * Return: factorial of n
  */
 int factorial(int n)
 {
