@@ -1,8 +1,9 @@
 #include "main.h"
 /**
  * factorial - Function name
- * @n : Parameter 1
+ *
  * Description : 'Function full description'
+ * @n : Parameter 1
  * Return : Return factorial always
  */
 int factorial(int n)
