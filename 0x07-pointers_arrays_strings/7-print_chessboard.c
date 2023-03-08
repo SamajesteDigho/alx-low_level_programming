@@ -13,9 +13,9 @@ for (i = 0; i < n1; i++)
 {
 for (j = 0; j < n2; j++)
 {
-_putchar(a[i][j]);
+putchar(a[i][j]);
 }
-_putchar('\n');
+putchar('\n');
 }
 }
 
