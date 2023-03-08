@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * is_prime_number - Function name
+ * findFactor - Function name
  * @n: Parameter 1
+ * @pos: Parameter 1
  * Description: 'Function full description'
  * Return: Return 1 or 0
  */
@@ -34,5 +35,5 @@ if (n <= 1)
 {
 return (0);
 }
-return (findFactor(n, n /2));
+return (findFactor(n, n / 2));
 }
