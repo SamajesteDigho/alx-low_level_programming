@@ -4,7 +4,7 @@
  *
  * Description: 'Function full description'
  * @s: Parameter 1
-
+ *
  * Return: Return the string length
  */
 int _strlen_recursion(char *s)
