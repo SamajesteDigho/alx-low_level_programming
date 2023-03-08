@@ -21,7 +21,7 @@ return (0);
 }
 
 /**
- * read_from_pos - Function name
+ * is_palindrome - Function name
  * @s: Parameter 1
  * Description: 'Function full description'
  * Return: Returns 0 or 1
@@ -30,5 +30,5 @@ int is_palindrome(char *s)
 {
 int a;
 a = strlen(s) - 1;
-return palindrome_searcher(s, 0, a);
+return (palindrome_searcher(s, 0, a));
 }
