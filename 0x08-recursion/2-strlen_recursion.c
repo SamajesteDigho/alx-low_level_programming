@@ -1,8 +1,10 @@
 #include "main.h"
 /**
  * _strlen_recursion - Function name
+ *
+ * Description: 'Function full description'
  * @s: Parameter 1
- * Description: Function full description
+
  * Return: Return the string length
  */
 int _strlen_recursion(char *s)
