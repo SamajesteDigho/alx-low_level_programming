@@ -3,7 +3,7 @@
  * factorial - Function name
  * @n : Parameter 1
  * Description : 'Function full description'
- * Return : Return factorial
+ * Return : Return factorial always
  */
 int factorial(int n)
 {
