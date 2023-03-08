@@ -1,22 +1,32 @@
 #include "main.h"
 /**
- * search_sqrt - Function name
+ * _search_sqrt - Function name
  * @x: Parameter 1
- * @index: Parameter 2
+ * @a: Parameter 2
+ * @b: Parameter 3
  * Description: 'Function full description'
  * Return: Return the square root
  */
-int search_sqrt(int x, int index)
+int _search_sqrt(int x, int a, int b)
 {
-if (index == 0)
+float mid;
+if (a <= b)
 {
+mid = (a + b) / 2;
+if ((mid * mid) == x)
+{
+return mid;
+}
+else if (mid * mid < x)
+{
+return _search_sqrt(x, mid + 1, b);
+}
+else
+{
+return _search_sqrt(x, a, mid - 1);
+}
+}
 return (-1);
-}
-if (index * index == x)
-{
-return index;
-}
-return search_sqrt(x, index - 1);
 }
 
 /**
@@ -27,7 +37,6 @@ return search_sqrt(x, index - 1);
  */
 int _sqrt_recursion(int n)
 {
-int a;
 if (n < 0)
 {
 return (-1);
@@ -40,6 +49,5 @@ if (n == 1)
 {
 return (1);
 }
-a = n / 2;
-return (search_sqrt(n, a));
+return (_search_sqrt(n, 0, n));
 }
