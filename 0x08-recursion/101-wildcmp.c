@@ -57,15 +57,5 @@ int comparer(char *s1, char *s2, int p1, int p2)
  */
 int wildcmp(char *s1, char *s2)
 {
-return comparer(s1, s2, 0, 0);
-}
-
-
-int main(void)
-{
-	int r;
-
-	r = wildcmp("holberton-holberton.c", "holbe*rton.c");
-	printf("%d\n", r);
-	return (0);
+return (comparer(s1, s2, 0, 0));
 }
