@@ -13,6 +13,7 @@ char *p;
 n1 = strlen(haystack);
 n2 = strlen(needle);
 pb = 0;
+p = NULL;
 for (i = 0; i < n1; i++)
 {
 if (haystack[i] == needle[0] && (n1 - i) >= n2)
