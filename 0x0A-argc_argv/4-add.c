@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _has_no_character - Entry point
+ * _has_no_character - Helper function
  * @s: Argument 1
  * Description: Function description
  * Return: Always return 0 or 1.
