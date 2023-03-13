@@ -13,7 +13,7 @@ if (size == 0)
 {
 return (NULL);
 }
-res = malloc(sizeof(int) * size);
+res = malloc(sizeof(char) * size);
 res[0] = c;
 return (res);
 }
