@@ -1,7 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-_putchar(int c);
+#include <stdio.h>
+#include <stdlib.h>
+
+void _putchar(int c);
 
 char *create_array(unsigned int size, char c);
 
