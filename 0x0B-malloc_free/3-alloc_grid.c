@@ -15,10 +15,10 @@ if (width <= 0 || height <= 0)
 {
 return (NULL);
 }
-mat = (int **) malloc(height *sizeof(int *));
+mat = (int **) malloc(height * sizeof(int *));
 for (i = 0; i < width; i++)
 {
-mat[i] = (int *) malloc(width *sizeof(int));
+mat[i] = (int *) malloc(width * sizeof(int));
 for (j = 0; j < height; j++)
 {
 mat[i][j] = 0;
