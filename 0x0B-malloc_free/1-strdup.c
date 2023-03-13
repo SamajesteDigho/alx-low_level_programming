@@ -15,7 +15,7 @@ if (str == NULL)
 return (NULL);
 }
 size = strlen(str);
-res = malloc(size * sizeof(char));
+res = malloc(size *sizeof(char));
 for (i = 0; i < size; i++)
 {
 res[i] = str[i];
