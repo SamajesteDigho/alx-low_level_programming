@@ -16,14 +16,14 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 
-mat = (int **) malloc(rows * sizeof(int *));
-for (int i = 0; i < rows; i++) {
-mat[i] = (int *) malloc(cols * sizeof(int));
+mat = (int **) malloc(height * sizeof(int *));
+for (int i = 0; i < height; i++) {
+mat[i] = (int *) malloc(width * sizeof(int));
 }
 
-for (i = 0; i < width; i++)
+for (i = 0; i < height; i++)
 {
-for (j = 0; j < height; j++)
+for (j = 0; j < width; j++)
 {
 mat[i][j] = 0;
 }
