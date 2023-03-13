@@ -8,13 +8,13 @@
  */
 char *create_array(unsigned int size, char c)
 {
-char *res;
+char res[size];
 unsigned int i;
 if (size == 0)
 {
 return (NULL);
 }
-res = malloc(sizeof(char) * size);
+// res = malloc(size * sizeof(char));
 for (i = 0; i < size; i++)
 {
 res[i] = c;
