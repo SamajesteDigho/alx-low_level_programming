@@ -24,27 +24,22 @@ if (amt < 0)
 printf("0\n");
 return (0);
 }
-/* Number of coins of 25 cents */
 nbc = max_nb_coins(amt, 25);
 tnc += nbc;
 amt -= nbc * 25;
 
-/* Number of coins of 10 cents */
 nbc = max_nb_coins(amt, 10);
 tnc += nbc;
 amt -= nbc * 10;
 
-/* Number of coins of 5 cents */
 nbc = max_nb_coins(amt, 5);
 tnc += nbc;
 amt -= nbc * 5;
 
-/* Number of coins of 2 cents */
 nbc = max_nb_coins(amt, 2);
 tnc += nbc;
 amt -= nbc * 2;
 
-/* Number of coins of 2 cents */
 nbc = max_nb_coins(amt, 1);
 tnc += nbc;
 amt -= nbc * 1;
