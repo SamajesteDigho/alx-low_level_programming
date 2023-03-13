@@ -59,5 +59,5 @@ int max_nb_coins(int amt, int coin)
 {
 int a;
 a = amt / coin;
-return a;
+return (a);
 }
