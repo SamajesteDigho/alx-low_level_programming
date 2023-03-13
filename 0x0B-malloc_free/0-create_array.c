@@ -14,7 +14,7 @@ if (size == 0)
 {
 return (NULL);
 }
-res = malloc(size * sizeof *res);
+res = malloc(size * sizeof(*res));
 for (i = 0; i < size; i++)
 {
 res[i] = c;
