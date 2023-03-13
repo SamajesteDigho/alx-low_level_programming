@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * str_concat - Function name
- * @s2: Parameter 1
+ * @s1: Parameter 1
  * @s2: Parameter 2
  * Description: Here the description
  * Return: Returns pointer to a char
@@ -28,7 +28,7 @@ else
 b = strlen(s2);
 }
 size = a + b;
-res = malloc(size * sizeof(*res) + 1);
+res = malloc(size *sizeof(*res) + 1);
 for (i = 0; i < a; i++)
 {
 res[i] = s1[i];
