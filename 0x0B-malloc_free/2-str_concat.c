@@ -11,10 +11,24 @@ char *str_concat(char *s1, char *s2)
 {
 char *res;
 int i, a, b, size;
+if (s1 == NULL)
+{
+a = 0;
+}
+else
+{
 a = strlen(s1);
+}
+if (s2 == NULL)
+{
+b = 0;
+}
+else
+{
 b = strlen(s2);
+}
 size = a + b;
-res = malloc(size * sizeof(*res));
+res = malloc(size * sizeof(*res) + 1);
 for (i = 0; i < a; i++)
 {
 res[i] = s1[i];
