@@ -16,7 +16,7 @@ if (width <= 0 || height <= 0)
 return (NULL);
 }
 
-int **mat = (int **) malloc(rows * sizeof(int *));
+mat = (int **) malloc(rows * sizeof(int *));
 for (int i = 0; i < rows; i++) {
 mat[i] = (int *) malloc(cols * sizeof(int));
 }
