@@ -22,6 +22,13 @@ return (NULL);
 }
 for (i = 0; i < height; i++)
 {
+if (mat == NULL)
+{
+while (--i >= 0){
+free(mat[i]);
+}
+free(mat);
+}
 mat[i] = (int *) malloc(width * sizeof(int));
 }
 for (i = 0; i < height; i++)
