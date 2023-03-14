@@ -20,7 +20,7 @@ for (i = 1; i < ac; i++)
 {
 t_size += strlen(av[i]);
 }
-res = (char *) malloc((t_size) * sizeof(char) t_size);
+res = (char *) malloc((t_size) * sizeof(char) + t_size);
 i = 0;
 for (j = 1; j < ac; j++)
 {
