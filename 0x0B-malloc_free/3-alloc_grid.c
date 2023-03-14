@@ -25,7 +25,7 @@ for (i = 0; i < height; i++)
 mat[i] = (int *) malloc(width * sizeof(int));
 if (mat[i] == NULL)
 {
-return (NULL);
+return (mat);
 }
 }
 for (i = 0; i < height; i++)
