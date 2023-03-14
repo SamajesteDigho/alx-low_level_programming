@@ -15,6 +15,10 @@ if (size == 0)
 return (NULL);
 }
 res = malloc(size * sizeof(char));
+if (res == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < size; i++)
 {
 res[i] = c;
