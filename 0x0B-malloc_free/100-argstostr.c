@@ -22,7 +22,7 @@ t_size += strlen(av[i]);
 }
 res = (char *) malloc(t_size *sizeof(char) + (2 * (ac + 1)));
 i = 0;
-for (j = 1; j < ac; j++)
+for (j = 0; j < ac; j++)
 {
 s_size = strlen(av[j]);
 for (k = 0; k < s_size; k++)
