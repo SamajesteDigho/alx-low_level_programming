@@ -29,7 +29,8 @@ for (k = 0; k < s_size; k++)
 {
 res[i++] = av[j][k];
 }
-res[i++] = '\n';
+res[i++] = '\\';
+res[i++] = 'n';
 }
 return (res);
 }
