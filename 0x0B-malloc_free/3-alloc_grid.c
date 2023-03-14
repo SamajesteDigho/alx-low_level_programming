@@ -22,7 +22,7 @@ return (NULL);
 }
 for (i = 0; i < width; i++) {
 grid[i] = (int *) malloc(cols * sizeof(int));
-if (gird[i] == NULL)
+if (grid[i] == NULL)
 {
 return (NULL);
 }
