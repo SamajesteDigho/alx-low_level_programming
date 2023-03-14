@@ -29,6 +29,10 @@ b = strlen(s2);
 }
 size = a + b;
 res = malloc(size *sizeof(*res) + 1);
+if (res == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < a; i++)
 {
 res[i] = s1[i];
