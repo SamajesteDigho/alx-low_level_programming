@@ -23,10 +23,6 @@ return (NULL);
 for (i = 0; i < height; i++)
 {
 mat[i] = (int *) malloc(width * sizeof(int));
-if (mat[i] == NULL)
-{
-return (mat);
-}
 }
 for (i = 0; i < height; i++)
 {
