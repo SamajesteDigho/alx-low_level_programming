@@ -22,6 +22,7 @@ for (j = 0; j < width; i++)
 grid[i][j] = 0;
 }
 }
+return (grid);
 }
 
 /* int **alloc_grid(int width, int height)
