@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * free_dog - check the code
+ * free_dog - Function name
  * @d: Parameter 1
  * Description: Here the code description
  */
