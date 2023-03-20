@@ -3,17 +3,17 @@
 #include "dog.h"
 
 /**
- * init_dog - check the code
+ * new_dog - check the code
  * @name: Parameter 1
- * @age: Parameter 3
- * @owner: Parameter 4
+ * @age: Parameter 2
+ * @owner: Parameter 3
  * Description: Here the code description
+ * Return: An instance of dog
  */
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
-d = malloc(sizeof(dog_t));
+d = malloc(sizeof(dog_t) + 1);
 if (d == NULL)
 {
 return (NULL);
