@@ -1,17 +1,18 @@
 #ifndef MAIN_H
 #define MAIN_H
-
 /**
- * dog - Structure declaration
+ * struct dog - Structure declaration
  * @name: Member 1
  * @age: Member 2
  * @owner: Member 3
+ *
  * Description: Describing the struct here
  */
-struct dog {
-    char* name;
+struct dog
+{
+    char *name;
     float age;
-    char* owner;
+    char *owner;
 };
 
 typedef struct dog dog_t;
