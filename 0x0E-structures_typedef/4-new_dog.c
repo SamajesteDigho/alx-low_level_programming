@@ -18,8 +18,8 @@ if (d == NULL)
 {
 return (NULL);
 }
-d->name = strcpy(name);
+strcpy(d->name, name);
 d->age = age;
-d->owner = strcpy(owner);
+strcpy(d->owner, owner);
 return (d);
 }
