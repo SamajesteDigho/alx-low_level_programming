@@ -36,19 +36,3 @@ p[a + i] = s2[i];
 p[size] = '\0';
 return (p);
 }
-
-
-int main(void)
-{
-	char *s;
-
-	s = string_nconcat("", "Hello", 12);
-	if (s == NULL)
-	{
-		printf("failed\n");
-		return (1);
-	}
-	printf("%s\n", s);
-	free(s);
-	return (0);
-}
