@@ -14,7 +14,7 @@ if (nmemb <= 0 || size <= 0)
 {
 return (NULL);
 }
-p = malloc(nmemb * size);
+p = malloc(nmemb * size + 1);
 if (p == NULL)
 {
 return (NULL);
