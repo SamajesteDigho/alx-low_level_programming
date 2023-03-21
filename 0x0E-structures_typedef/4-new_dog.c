@@ -14,12 +14,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 dog_t *d;
 d = malloc(sizeof(dog_t) + 1);
-if (d)
+if (d == NULL)
 {
+return (NULL);
+}
 d->name = strcpy(name);
 d->age = age;
 d->owner = strcpy(owner);
 return (d);
-}
-return (NULL);
 }
