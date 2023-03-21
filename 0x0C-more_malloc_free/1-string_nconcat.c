@@ -18,7 +18,7 @@ if (b > n)
 {
 b = n;
 }
-size = a + b + 1;
+size = a + b;
 p = malloc(size);
 
 if (p == NULL)
@@ -33,6 +33,22 @@ for (i = 0; i < b; i++)
 {
 p[a + i] = s2[i];
 }
-p[size] = '\n';
+p[size] = '\0';
 return (p);
+}
+
+
+int main(void)
+{
+	char *s;
+
+	s = string_nconcat("", "Hello", 12);
+	if (s == NULL)
+	{
+		printf("failed\n");
+		return (1);
+	}
+	printf("%s\n", s);
+	free(s);
+	return (0);
 }
