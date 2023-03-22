@@ -30,8 +30,7 @@ return (ptr);
 else
 {
 free(ptr);
-ptr = NULL;
-ptr = malloc(new_size);
+ptr = realloc(ptr, new_size);
 if (ptr)
 {
 return (ptr);
