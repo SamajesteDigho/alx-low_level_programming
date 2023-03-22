@@ -29,8 +29,14 @@ return (ptr);
 }
 else
 {
+free(ptr);
+ptr = NULL;
 ptr = malloc(new_size);
+if (ptr)
+{
 return (ptr);
+}
+return (NULL);
 }
 }
 return (malloc(new_size));
