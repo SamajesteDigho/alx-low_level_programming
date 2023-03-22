@@ -33,6 +33,8 @@ for (i = 0; i < b; i++)
 {
 p[a + i] = s2[i];
 }
+free(s1);
+free(s2);
 p[size] = '\0';
 return (p);
 }
