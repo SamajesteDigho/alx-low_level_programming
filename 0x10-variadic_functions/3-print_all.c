@@ -11,25 +11,27 @@ void print_all(const char * const format, ...)
 va_list args;
 int walker;
 char *current;
+if (format)
+{
 walker = 0;
 va_start(args, format);
 while (format[walker + 1] != '\0')
 {
-switch(format[walker])
+switch (format[walker])
 {
-case 'c' :
+case 'c':
 printf("%c", va_arg(args, int));
 printf(", ");
 break;
-case 'i' :
+case 'i':
 printf("%d", va_arg(args, int));
 printf(", ");
 break;
-case 'f' :
+case 'f':
 printf("%f", va_arg(args, double));
 printf(", ");
 break;
-case 's' :
+case 's':
 current = va_arg(args, char *);
 printf("%s", get_string(current));
 printf(", ");
@@ -37,7 +39,7 @@ break;
 }
 walker++;
 }
-switch(format[walker])
+switch (format[walker])
 {
 case 'c' :
 printf("%c", va_arg(args, int));
@@ -52,6 +54,7 @@ case 's' :
 current = va_arg(args, char *);
 printf("%s", get_string(current));
 break;
+}
 }
 printf("\n");
 }
