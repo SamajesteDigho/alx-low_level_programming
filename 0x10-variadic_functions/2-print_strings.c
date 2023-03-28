@@ -10,18 +10,35 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 va_list args;
 unsigned int walker;
+char *current;
 if (n != 0)
 {
 va_start(args, n);
 for (walker = 0; walker < n - 1; walker++)
 {
-printf("%s", va_arg(args, char *));
+current = va_arg(args, char *);
+if (current == NULL)
+{
+printf("(nil)");
+}
+else
+{
+printf("%s", current);
+}
 if (separator)
 {
 printf("%s", separator);
 }
 }
-printf("%s\n", va_arg(args, char *));
+current = va_arg(args, char *);
+if (current)
+{
+printf("%s\n", current);
+}
+else
+{
+printf("(nil)\n");
+}
 va_end(args);
 }
 else
