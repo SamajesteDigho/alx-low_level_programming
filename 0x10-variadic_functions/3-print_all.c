@@ -1,4 +1,14 @@
 #include "variadic_functions.h"
+
+char *get_string(char *value)
+{
+if (value == NULL)
+{
+return ("(nil)");
+}
+return value;
+}
+
 /**
  * print_all - Function name
  * @format: Arguments format
@@ -10,12 +20,6 @@ void print_all(const char * const format, ...)
 va_list args;
 int walker;
 char *current;
-if (format == NULL)
-{
-printf("(nil)\n");
-}
-else
-{
 walker = 0;
 va_start(args, format);
 while (format[walker + 1] != '\0')
@@ -36,14 +40,7 @@ printf(", ");
 break;
 case 's' :
 current = va_arg(args, char *);
-if (current == NULL)
-{
-printf("(nil)");
-}
-else
-{
-printf("%s", current);
-}
+printf("%s", get_string(current));
 printf(", ");
 break;
 }
@@ -62,16 +59,14 @@ printf("%f", va_arg(args, double));
 break;
 case 's' :
 current = va_arg(args, char *);
-if (current == NULL)
-{
-printf("(nil)");
-}
-else
-{
-printf("%s", current);
-}
+printf("%s", get_string(current));
 break;
 }
-}
 printf("\n");
+}
+
+int main(void)
+{
+    print_all("ceis", 'B', 3, "stSchool");
+    return (0);
 }
