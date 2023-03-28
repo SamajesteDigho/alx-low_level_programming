@@ -24,6 +24,7 @@ printf("\n");
 /**
  * get_string - Function name
  * @value: Arguments format
+ * Description: Returns nil or string
  * Return: Returns a string
  */
 char *get_string(char *value)
@@ -36,19 +37,24 @@ return (value);
  * _printer - Function name
  * @c: Arguments format
  * @args: Arguments format
- * @end: yes - 0, no - 1
+ * @sep: yes - 0, no - 1
+ * Description: This function prints with the required format
  */
-void _printer(char c, va_list args, char* sep)
+void _printer(char c, va_list args, char *sep)
 {
 switch (c)
 {
-case 'c': printf("%c%s", va_arg(args, int), sep);
+case 'c':
+printf("%c%s", va_arg(args, int), sep);
 break;
-case 'i': printf("%d%s", va_arg(args, int), sep);
+case 'i':
+printf("%d%s", va_arg(args, int), sep);
 break;
-case 'f': printf("%f%s", va_arg(args, double), sep);
+case 'f':
+printf("%f%s", va_arg(args, double), sep);
 break;
-case 's': printf("%s%s", get_string(va_arg(args, char *)), sep);
+case 's':
+printf("%s%s", get_string(va_arg(args, char *)), sep);
 break;
 }
 }
