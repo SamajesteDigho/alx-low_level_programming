@@ -52,9 +52,3 @@ case 's': printf("%s%s", get_string(va_arg(args, char *)), sep);
 break;
 }
 }
-
-int main(void)
-{
-    print_all("ceis", 'B', 3, "stSchool");
-    return (0);
-}
