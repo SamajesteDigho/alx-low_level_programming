@@ -1,5 +1,11 @@
 #include "variadic_functions.h"
 
+/**
+ * get_string - Function name
+ * @value: Arguments format
+ * Description: This function returns a string accordingly
+ * Return: Returns a string
+ */
 char *get_string(char *value)
 {
 if (value == NULL)
