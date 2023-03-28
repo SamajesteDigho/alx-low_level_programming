@@ -15,6 +15,6 @@ void print_all(const char * const format, ...);
 
 char *get_string(char *value);
 
-void _printer(char c, va_list args);
+void _printer(char c, va_list args, int end);
 
 #endif /* MAIN_H */
