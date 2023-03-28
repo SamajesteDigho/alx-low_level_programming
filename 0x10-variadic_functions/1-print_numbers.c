@@ -13,7 +13,7 @@ unsigned int walker;
 if (n != 0)
 {
 va_start(args, n);
-for (walker = 0; walker < n-1; walker++)
+for (walker = 0; walker < n - 1; walker++)
 {
 printf("%d", va_arg(args, int));
 if (separator)
@@ -24,4 +24,14 @@ printf("%s", separator);
 printf("%d\n", va_arg(args, int));
 va_end(args);
 }
+else
+{
+printf("\n");
+}
+}
+
+int main(void)
+{
+	print_numbers("; ", 0);
+	return (0);
 }
