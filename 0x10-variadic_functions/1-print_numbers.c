@@ -29,9 +29,3 @@ else
 printf("\n");
 }
 }
-
-int main(void)
-{
-	print_numbers("; ", 0);
-	return (0);
-}
