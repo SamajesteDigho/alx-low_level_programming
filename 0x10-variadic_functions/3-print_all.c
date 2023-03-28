@@ -13,10 +13,10 @@ walker = 0;
 va_start(args, format);
 while (format[walker + 1] != '\0')
 {
-_printer(format[walker], args, 1);
+_printer(format[walker], args, ", ");
 walker++;
 }
-_printer(format[walker], args, 0);
+_printer(format[walker], args, "");
 va_end(args);
 }
 printf("\n");
@@ -38,24 +38,23 @@ return (value);
  * @args: Arguments format
  * @end: yes - 0, no - 1
  */
-void _printer(char c, va_list args, int end)
+void _printer(char c, va_list args, char* sep)
 {
-int i = 0;
 switch (c)
 {
-case 'c': printf("%c", va_arg(args, int));
-i = 1;
+case 'c': printf("%c%s", va_arg(args, int), sep);
 break;
-case 'i': printf("%d", va_arg(args, int));
-i = 1;
+case 'i': printf("%d%s", va_arg(args, int), sep);
 break;
-case 'f': printf("%f", va_arg(args, double));
-i = 1;
+case 'f': printf("%f%s", va_arg(args, double), sep);
 break;
-case 's': printf("%s", get_string(va_arg(args, char *)));
-i = 1;
+case 's': printf("%s%s", get_string(va_arg(args, char *)), sep);
 break;
 }
-if (end == 1 && i == 1)
-printf(", ");
+}
+
+int main(void)
+{
+    print_all("ceis", 'B', 3, "stSchool");
+    return (0);
 }
