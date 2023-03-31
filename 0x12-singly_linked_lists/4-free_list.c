@@ -6,7 +6,8 @@
  */
 void free_list(list_t *head)
 {
-list_t *tmp, *del;
+list_t *tmp;
+list_t *del;
 tmp = head;
 while (tmp != NULL)
 {
@@ -16,9 +17,7 @@ if (del->str != NULL)
 {
 free(del->str);
 }
-del->len = 0;
 del->next = NULL;
-del = NULL;
+free(del);
 }
-head = NULL;
 }
