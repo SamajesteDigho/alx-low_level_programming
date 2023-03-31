@@ -20,6 +20,6 @@ new->str = strdup(str);
 new->len = strlen(str);
 new->next = (*head);
 (*head) = new;
-return (head);
+return (*head);
 }
 }
