@@ -17,6 +17,7 @@ new->len = strlen(str);
 new->next = NULL;
 if (*head == NULL) {
 (*head) = new;
+return (*head);
 }
 else
 {
