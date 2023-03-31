@@ -12,7 +12,3 @@ mov ecx, hello  ; pointer to the message to print
 mov edx, 16     ; message length in bytes
 int 0x80        ; invoke the system call
 
-; exit the program with status code 0
-mov eax, 1      ; syscall number for exit
-xor ebx, ebx    ; exit status code (0 = success)
-int 0x80        ; invoke the system call
