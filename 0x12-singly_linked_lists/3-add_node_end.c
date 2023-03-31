@@ -18,7 +18,7 @@ new->len = strlen(str);
 new->next = NULL;
 if (*head == NULL) {
 (*head) = new;
-return (*head);
+return ((*head));
 }
 else
 {
@@ -28,7 +28,7 @@ while (tmp->next != NULL)
 tmp = tmp->next;
 }
 tmp->next = new;
-return (*head);
+return ((*head));
 }
 }
 return (NULL);
