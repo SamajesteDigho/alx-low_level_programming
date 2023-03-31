@@ -32,5 +32,4 @@ tmp->next = new;
 return (*head);
 }
 }
-return (NULL);
 }
