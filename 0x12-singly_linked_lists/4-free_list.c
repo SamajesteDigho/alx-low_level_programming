@@ -12,7 +12,10 @@ while (tmp != NULL)
 {
 del = tmp;
 tmp = tmp->next;
+if (del->str != NULL)
+{
 free(del->str);
+}
 del->len = 0;
 del->next = NULL;
 del = NULL;
