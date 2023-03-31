@@ -17,18 +17,18 @@ new->str = strdup(str);
 new->len = strlen(str);
 new->next = NULL;
 if (*head == NULL) {
-(*head) = new;
-return ((*head));
+*head = new;
+return (*head);
 }
 else
 {
-tmp = (*head);
+tmp = *head;
 while (tmp->next != NULL)
 {
 tmp = tmp->next;
 }
 tmp->next = new;
-return ((*head));
+return (*head);
 }
 }
 return (NULL);
