@@ -21,7 +21,7 @@ return (*head);
 }
 else
 {
-tmp = (*head);
+tmp = *head;
 while (tmp->next != NULL)
 {
 tmp = tmp->next;
