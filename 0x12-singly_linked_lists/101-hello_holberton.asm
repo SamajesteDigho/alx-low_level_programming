@@ -1,1 +1,1 @@
-hello db "Hello, Holberton"
+hello db "Hello, Holberton", 0x0A
