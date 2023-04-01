@@ -16,7 +16,8 @@ if (new)
 new->str = strdup(str);
 new->len = strlen(str);
 new->next = NULL;
-if (*head == NULL) {
+if (*head == NULL)
+{
 *head = new;
 return (*head);
 }
