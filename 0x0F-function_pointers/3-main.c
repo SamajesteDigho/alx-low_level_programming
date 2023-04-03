@@ -23,7 +23,7 @@ printf("%d\n", f(a, b));
 }
 else
 {
-printd("Error\n")
+printf("Error\n");
 }
 return (0);
 }
