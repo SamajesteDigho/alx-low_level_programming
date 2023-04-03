@@ -1,5 +1,5 @@
 section .data
-    hello db "Hello, Holberton", 0x0A   ; null-terminated string with new line character
+    hello db "Hello, Holberton\n"
 
 section .text
     global _start
