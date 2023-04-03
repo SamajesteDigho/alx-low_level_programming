@@ -35,13 +35,3 @@ p[a + i] = s2[i];
 p[size] = '\0';
 return (p);
 }
-
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
