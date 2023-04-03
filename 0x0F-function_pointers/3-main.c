@@ -20,10 +20,11 @@ b = atoi(argv[3]);
 f = get_op_func(argv[2]);
 if (f) {
 printf("%d\n", f(a, b));
+return (0);
 }
 else
 {
 printf("Error\n");
+exit(99);
 }
-return (0);
 }
