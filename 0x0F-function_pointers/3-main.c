@@ -18,7 +18,8 @@ exit(98);
 a = atoi(argv[1]);
 b = atoi(argv[3]);
 f = get_op_func(argv[2]);
-if (f) {
+if (f)
+{
 printf("%d\n", f(a, b));
 return (0);
 }
