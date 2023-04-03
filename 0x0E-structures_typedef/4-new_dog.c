@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "dog.h"
 /**
  * new_dog - check the code
@@ -17,8 +15,8 @@ if (d == NULL)
 {
 return (NULL);
 }
-d->name = name;
+d->name = strdup(name);
 d->age = age;
-d->owner = owner;
+d->owner = strdup(owner);
 return (d);
 }
