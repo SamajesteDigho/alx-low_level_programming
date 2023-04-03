@@ -5,7 +5,7 @@
  * @argv: Vector of arguments
  * Description: Multiply 2 parameters passed to the file
  * Return: Always 0.
-*/
+ */
 int main(int argc, char **argv)
 {
 long int a, b;
@@ -38,17 +38,17 @@ return (0);
  * @str: Number of parameters
  * Description: Check if a string is essentially a number
  * Return: Always 1 or -1.
-*/
+ */
 int check_only_numbers(char* str)
 {
 unsigned int size, i;
 size = strlen(str);
 for (i = 0; i < size; i++)
 {
-if (str[i] < '0' && str[i] > '9')
+if (str[i] < '0' || str[i] > '9')
 {
 return (-1);
 }
-return (1);
 }
+return (1);
 }
