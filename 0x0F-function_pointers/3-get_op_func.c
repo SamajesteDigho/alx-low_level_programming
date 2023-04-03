@@ -16,10 +16,8 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-
-
 i = 0;
-while (i < 6)
+while (i < 5)
 {
 if (s[0] == ops[i].op[0] && strlen(s) == strlen(ops[i].op))
 {
