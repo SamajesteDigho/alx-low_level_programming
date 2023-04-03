@@ -39,7 +39,7 @@ return (0);
  * Description: Check if a string is essentially a number
  * Return: Always 1 or -1.
  */
-int check_only_numbers(char* str)
+int check_only_numbers(char *str)
 {
 unsigned int size, i;
 size = strlen(str);

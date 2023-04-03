@@ -15,6 +15,6 @@ int *array_range(int min, int max);
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
-int check_only_numbers(char* str);
+int check_only_numbers(char *str);
 
 #endif /* MAIN_H */
