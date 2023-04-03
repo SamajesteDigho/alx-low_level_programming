@@ -8,7 +8,7 @@
 */
 int main(int argc, char **argv)
 {
-int a, b;
+long int a, b;
 if (argc != 3)
 {
 printf("Error\n");
@@ -21,6 +21,6 @@ if (a == 0 || b == 0)
 printf("Error\n");
 exit(98);
 }
-printf("%d\n", a * b);
+printf("%li\n", a *b);
 return (0);
 }
