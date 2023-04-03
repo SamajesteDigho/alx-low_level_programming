@@ -2,8 +2,7 @@
 /**
  * get_op_func - Modulo function
  * @s: Parameter 1
- * Description: Function responsible of calculating
-    the modulo between 2 numbers
+ * Description: Function for the modulo between 2 numbers
  * Return: The modulo of a and b
  */
 int (*get_op_func(char *s))(int, int)
