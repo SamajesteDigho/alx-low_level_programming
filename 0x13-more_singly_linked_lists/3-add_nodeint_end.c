@@ -14,13 +14,13 @@ if (new)
 {
 new->n = n;
 new->next = NULL;
-if ((*head) == NULL)
+if (*head == NULL)
 {
 (*head) = new;
 }
 else
 {
-tmp = (*head);
+tmp = *head;
 while (tmp->next != NULL)
 {
 tmp = tmp->next;
