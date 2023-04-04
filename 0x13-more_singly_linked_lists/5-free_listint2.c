@@ -18,5 +18,4 @@ del->next = NULL;
 free(del);
 }
 }
-(*head) = NULL;
 }
