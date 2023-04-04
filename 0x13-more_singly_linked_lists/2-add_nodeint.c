@@ -20,7 +20,7 @@ if (*head == NULL)
 }
 else
 {
-new->next = (*head);
+new->next = *head;
 (*head) = new;
 }
 return (*head);
