@@ -7,9 +7,9 @@
 void free_listint2(listint_t **head)
 {
 listint_t *tmp, *del;
-if ((*head) != NULL)
+if (*head != NULL)
 {
-tmp = (*head);
+tmp = *head;
 while (tmp != NULL)
 {
 del = tmp;
