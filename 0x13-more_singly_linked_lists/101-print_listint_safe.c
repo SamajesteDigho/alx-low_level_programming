@@ -9,6 +9,10 @@ size_t print_listint_safe(const listint_t *head)
 {
 listint_t *tmp;
 size_t size;
+if (head == NULL)
+{
+return (0);
+}
 size = 1;
 printf("%d\n", head->n);
 tmp = head->next;
