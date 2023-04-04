@@ -16,6 +16,8 @@ del = tmp;
 tmp = tmp->next;
 del->next = NULL;
 free(del);
+del = NULL;
 }
 }
+(*head) = NULL;
 }
