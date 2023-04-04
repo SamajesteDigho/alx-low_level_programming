@@ -10,7 +10,7 @@ size_t free_listint_safe(listint_t **h)
 listint_t *tmp, *del;
 size_t size;
 size = 0;
-tmp = (*h);
+tmp = *h;
 while (tmp != NULL)
 {
 del = tmp;
