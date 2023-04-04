@@ -18,7 +18,7 @@ while (tmp->next != NULL && pos < idx - 1)
 tmp = tmp->next;
 pos++;
 }
-if (tmp == NULL)
+if (tmp == NULL || pos >= idx)
 {
 return (NULL);
 }
