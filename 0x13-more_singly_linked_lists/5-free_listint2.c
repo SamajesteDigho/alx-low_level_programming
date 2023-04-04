@@ -15,7 +15,7 @@ while (tmp != NULL)
 del = tmp;
 tmp = tmp->next;
 del->next = NULL;
-del = NULL;
+free(del);
 }
 }
 (*head) = NULL;
