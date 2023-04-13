@@ -24,6 +24,10 @@ return (-1);
 fp = fopen(filename, "a+");
 if (fp)
 {
+if (text_content == NULL)
+{
+return (1);
+}
 fputs(text_content, fp);
 return (1);
 }
