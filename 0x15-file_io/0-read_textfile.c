@@ -29,5 +29,6 @@ count++;
 letters--;
 c = fgetc(fp);
 }
+fclose(fp);
 return (count);
 }
