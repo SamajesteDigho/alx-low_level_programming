@@ -32,13 +32,13 @@ while (!feof(from))
 fgets(buffer, 1024, from);
 fputs(buffer, to);
 }
-if (fclose(from))
+if (!fclose(from))
 {
-printf("Error: Can't close fd %d", errno);
+printf("Error: Can't close fd %d\n", errno);
 }
-if (fclose(to))
+if (!fclose(to))
 {
-printf("Error: Can't close fd  %d", errno);
+printf("Error: Can't close fd  %d\n", errno);
 }
 return (0);
 }
