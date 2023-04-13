@@ -16,7 +16,7 @@ fp = fopen(filename, "r");
 c = fgetc(fp);
 while (letters > 0 && c != EOF)
 {
-putchar(fgetc(fp));
+putchar(c);
 count++;
 letters--;
 c = fgetc(fp);
