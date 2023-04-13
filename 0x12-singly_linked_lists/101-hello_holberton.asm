@@ -11,6 +11,3 @@ _start:
     mov edx, 16
     int 0x80
 
-    mov eax, 1
-    xor ebx, ebx
-    int 0x80
