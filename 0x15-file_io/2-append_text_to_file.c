@@ -2,9 +2,9 @@
 /**
  * append_text_to_file - Function name
  * @filename: Path to the file
- * @letters: The number of letters to read
+ * @text_content: The number of letters to read
  * Description: This function reads some characters
- * Return: The number of written characters
+ * Return: The status of function
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
