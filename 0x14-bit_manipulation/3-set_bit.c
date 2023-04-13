@@ -24,7 +24,8 @@ return (-1);
 /**
  * get_min_bit_hold - Function name
  * @n: Parameter 1
- * Description: Helper function to get the min number of bits required to print a binary
+ * Description: Helper function to get the min number of
+ * bits required to print a binary
  * Return: Returns number of bits
  */
 unsigned int get_min_bit_hold(unsigned int n)
