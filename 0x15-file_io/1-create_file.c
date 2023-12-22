@@ -19,6 +19,7 @@ if (fp)
 if (fputs(text_content, fp) != EOF)
 {
 fclose(fp);
+chmod(filename, S_IRUSR | S_IWUSR);
 return (1);
 }
 fclose(fp);
