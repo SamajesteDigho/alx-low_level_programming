@@ -85,20 +85,20 @@ fprintf(stderr, "The parsed file is not an ELF file.\n");
 exit(98);
 }
 printf("ELF Header:\n");
-printf("    Magic:  ");
+printf("  Magic:  ");
 for (i = 0; i < EI_NIDENT; ++i)
 {
 printf("%02x ", (&header)->e_ident[i]);
 }
 printf("\n");
-printf("    Class:                  %s\n", (&header)->e_ident[EI_CLASS] == ELFCLASS32 ? "ELF32" : "ELF64");
-printf("    Data:                   %s\n", (&header)->e_ident[EI_DATA] ? "2's complement, little endian" : "2's complement, big endian");
-printf("    Version:                %d", (&header)->e_ident[EI_VERSION]);
+printf("  Class:                             %s\n", (&header)->e_ident[EI_CLASS] == ELFCLASS32 ? "ELF32" : "ELF64");
+printf("  Data:                              %s\n", (&header)->e_ident[EI_DATA] ? "2's complement, little endian" : "2's complement, big endian");
+printf("  Version:                           %d", (&header)->e_ident[EI_VERSION]);
 printf(" (current)\n");
-printf("    OS/ABI:                 %s\n", get_elf_osabi((&header)->e_ident[EI_OSABI]));
-printf("    ABI Version:            %d\n", (&header)->e_ident[EI_ABIVERSION]);
-printf("    Type:                   %s\n", get_elf_type((&header)->e_type));
-printf("    Entry point address:    0x%lx\n", (unsigned long) (&header)->e_entry);
+printf("  OS/ABI:                            %s\n", get_elf_osabi((&header)->e_ident[EI_OSABI]));
+printf("  ABI Version:                       %d\n", (&header)->e_ident[EI_ABIVERSION]);
+printf("  Type:                              %s\n", get_elf_type((&header)->e_type));
+printf("  Entry point address:               0x%x\n", (unsigned int) (&header)->e_entry);
 close(elf);
 return(0);
 }
