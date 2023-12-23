@@ -10,6 +10,7 @@ int main(int argc, char **argv)
 {
 FILE *from, *to;
 char buffer[1024];
+size_t readLength;
 if (argc != 3)
 {
 printf("Usage: cp file_from file_to\n");
@@ -33,19 +34,18 @@ if (to == NULL)
 printf("Error: Can't write to %s\n", argv[2]);
 exit(99);
 }
-while (!feof(from))
+while ((readLength = fread(buffer, 1, 1024, from)) > 0)
 {
-fgets(buffer, 1024, from);
-fputs(buffer, to);
+fwrite(buffer, 1, readLength, to);
 }
 if (fclose(to) == -1)
 {
-printf("Error: Can't close fd  %d for to\n", errno);
+printf("Error: Can't close fd  %d\n", errno);
 exit(100);
 }
 if (fclose(from) == -1)
 {
-printf("Error: Can't close fd %d for from\n", errno);
+printf("Error: Can't close fd %d\n", errno);
 exit(100);
 }
 return (0);
