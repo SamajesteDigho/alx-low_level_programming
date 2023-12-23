@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * check_elf_file - Check is an elf file
- * @code: Magic number array
+ * @magic: Magic number array
  * Description: This function collects the magic number array and return 0=false and 1=true
  * Return: Always return 0 or 1
 */
@@ -36,13 +36,13 @@ default: return ("<unknown: 53>");
 
 /**
  * get_elf_type - Get the Type Name
- * @code: OSABI Code
+ * @type: OSABI Code
  * Description: This function collects a code return the corresponding Type
  * Return: The Type name 
 */
-char* get_elf_type(Elf64_Half typeCode)
+char* get_elf_type(Elf64_Half type)
 {
-switch (typeCode)
+switch (type)
 {
 case 0: return ("NONE");
 case 1: return ("REL");
@@ -94,7 +94,7 @@ printf("%02x\n", (&header)->e_ident[i]);
 printf("  Class:                             %s\n", (&header)->e_ident[EI_CLASS] == ELFCLASS32 ? "ELF32" : "ELF64");
 printf("  Data:                              %s\n", (&header)->e_ident[EI_DATA] ? "2's complement, little endian" : "2's complement, big endian");
 printf("  Version:                           %d", (&header)->e_ident[EI_VERSION]);
-printf(" (current)\n");
+printf("%s", (&header)->e_version == EV_CURRENT ? " (current)\n" : "");
 printf("  OS/ABI:                            %s\n", get_elf_osabi((&header)->e_ident[EI_OSABI]));
 printf("  ABI Version:                       %d\n", (&header)->e_ident[EI_ABIVERSION]);
 printf("  Type:                              %s\n", get_elf_type((&header)->e_type));
