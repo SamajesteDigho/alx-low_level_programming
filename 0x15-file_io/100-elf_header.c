@@ -46,7 +46,7 @@ switch (typeCode)
 {
 case 0: return ("NONE");
 case 1: return ("REL");
-case 2: return ("EXEC (Eecutable File)");
+case 2: return ("EXEC (Eecutable file)");
 case 3: return ("DYN (Shared object file)");
 case 4: return ("CORE");
 default: return ("Unknown");
