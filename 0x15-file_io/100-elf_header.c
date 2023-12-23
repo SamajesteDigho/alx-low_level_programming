@@ -85,7 +85,7 @@ fprintf(stderr, "The parsed file is not an ELF file.\n");
 exit(98);
 }
 printf("ELF Header:\n");
-printf("  Magic:  ");
+printf("  Magic:   ");
 for (i = 0; i < EI_NIDENT; ++i)
 {
 printf("%02x ", (&header)->e_ident[i]);
