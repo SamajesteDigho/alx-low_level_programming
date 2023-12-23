@@ -97,11 +97,13 @@ int i;
 unsigned char class;
 unsigned int data;
 unsigned char osabi;
+unsigned int address;
 int osabi_version;
 class = (&h)->e_ident[EI_CLASS];
 data = (&h)->e_ident[EI_DATA];
 osabi = (&h)->e_ident[EI_OSABI];
 osabi_version = (&h)->e_ident[EI_ABIVERSION];
+address = (unsigned int) (&h)->e_entry;
 printf("ELF Header:\n");
 printf("  Magic:   ");
 for (i = 0; i < EI_NIDENT - 1; ++i)
@@ -116,7 +118,7 @@ printf("%s\n", (&h)->e_version == EV_CURRENT ? " (current)" : "");
 printf("  OS/ABI:                            %s\n", elf_osabi(osabi));
 printf("  ABI Version:                       %d\n", osabi_version);
 printf("  Type:                              %s\n", elf_type((&h)->e_type));
-printf("  Entry point address:               0x%x\n", (int) (&h)->e_entry);
+printf("  Entry point address:               0x%x\n", address);
 }
 
 /**
