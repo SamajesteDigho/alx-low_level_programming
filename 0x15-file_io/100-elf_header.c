@@ -46,7 +46,7 @@ switch (typeCode)
 {
 case 0: return ("NONE");
 case 1: return ("REL");
-case 2: return ("EXEC (Eecutable file)");
+case 2: return ("EXEC (Executable file)");
 case 3: return ("DYN (Shared object file)");
 case 4: return ("CORE");
 default: return ("Unknown");
@@ -86,11 +86,11 @@ exit(98);
 }
 printf("ELF Header:\n");
 printf("  Magic:   ");
-for (i = 0; i < EI_NIDENT; ++i)
+for (i = 0; i < EI_NIDENT - 1; ++i)
 {
 printf("%02x ", (&header)->e_ident[i]);
 }
-printf("\n");
+printf("%02x\n", (&header)->e_ident[i]);
 printf("  Class:                             %s\n", (&header)->e_ident[EI_CLASS] == ELFCLASS32 ? "ELF32" : "ELF64");
 printf("  Data:                              %s\n", (&header)->e_ident[EI_DATA] ? "2's complement, little endian" : "2's complement, big endian");
 printf("  Version:                           %d", (&header)->e_ident[EI_VERSION]);
