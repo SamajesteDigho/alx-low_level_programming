@@ -24,7 +24,7 @@ count = 0;
 c = fgetc(fp);
 while (letters > 0 && c != EOF)
 {
-putchar(c);
+fprintf(stdout, "%c", c);
 count++;
 letters--;
 c = fgetc(fp);
