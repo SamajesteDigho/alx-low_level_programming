@@ -87,7 +87,7 @@ default: return ("2's complement, big endian");
 
 /**
  * print_header - Get the Type Name
- * @header: OSABI Code
+ * @h: OSABI Code
  * Description: This function collects a code return the corresponding Type
  * Return: The Type name
 */
