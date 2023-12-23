@@ -86,39 +86,18 @@ default: return ("2's complement, big endian");
 }
 
 /**
- * main - Entry point
- * @argc: Number of parameters
- * @argv: Vector containing parameter
- * Description: Main function
- * Return: Always returns (0)
- */
-int main(int argc, char **argv)
+ * print_header - Get the Type Name
+ * @header: OSABI Code
+ * Description: This function collects a code return the corresponding Type
+ * Return: The Type name
+*/
+void print_header(Elf64_Ehdr h)
 {
-int elf;
-Elf64_Ehdr h;
+int i;
 unsigned char class;
 unsigned int data;
 unsigned char osabi;
 int osabi_version;
-int i;
-if (argc != 2)
-{
-fprintf(stderr, "Usage: readelf <file_name>\n");
-exit(98);
-}
-elf = open(argv[1], O_RDONLY);
-if (elf == -1)
-{
-fprintf(stderr, "The file could not be found.\n");
-close(elf);
-exit(98);
-}
-read(elf, &h, sizeof(Elf64_Ehdr));
-if (check_elf((&h)->e_ident) == 0)
-{
-fprintf(stderr, "The parsed file is not an ELF file.\n");
-exit(98);
-}
 class = (&h)->e_ident[EI_CLASS];
 data = (&h)->e_ident[EI_DATA];
 osabi = (&h)->e_ident[EI_OSABI];
@@ -138,6 +117,38 @@ printf("  OS/ABI:                            %s\n", elf_osabi(osabi));
 printf("  ABI Version:                       %d\n", osabi_version);
 printf("  Type:                              %s\n", elf_type((&h)->e_type));
 printf("  Entry point address:               0x%x\n", (int) (&h)->e_entry);
+}
+
+/**
+ * main - Entry point
+ * @argc: Number of parameters
+ * @argv: Vector containing parameter
+ * Description: Main function
+ * Return: Always returns (0)
+ */
+int main(int argc, char **argv)
+{
+int elf;
+Elf64_Ehdr h;
+if (argc != 2)
+{
+fprintf(stderr, "Usage: readelf <file_name>\n");
+exit(98);
+}
+elf = open(argv[1], O_RDONLY);
+if (elf == -1)
+{
+fprintf(stderr, "The file could not be found.\n");
 close(elf);
-return(0);
+exit(98);
+}
+read(elf, &h, sizeof(Elf64_Ehdr));
+if (check_elf((&h)->e_ident) == 0)
+{
+fprintf(stderr, "The parsed file is not an ELF file.\n");
+exit(98);
+}
+print_header(h);
+close(elf);
+return (0);
 }

@@ -18,5 +18,6 @@ char *elf_osabi(unsigned char code);
 char *elf_type(Elf64_Half type);
 char *elf_class(unsigned char class);
 char *elf_data(unsigned int type);
+void print_header(Elf64_Ehdr h);
 
 #endif /* MAIN_H */
