@@ -15,7 +15,9 @@ count = 0;
 tmp = *h;
 new = (dlistint_t *)malloc(sizeof(dlistint_t));
 if (new == NULL)
+{
 return (NULL);
+}
 while (tmp != NULL && count < idx - 1)
 {
 tmp = tmp->next;
