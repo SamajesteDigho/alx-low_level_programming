@@ -23,6 +23,7 @@ if (*head == NULL)
 return (new);
 }
 new->next = *head;
+(*head)->prev = new;
 *head = new;
 return (new);
 }
