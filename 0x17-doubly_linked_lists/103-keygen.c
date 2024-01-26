@@ -19,13 +19,14 @@ exit(98);
 }
 name = argv[1];
 str_len = strlen(name);
-key = (char *) malloc(str_len *sizeof(char));
+key = (char *) malloc((str_len + 1) *sizeof(char));
 j = 0;
 for (i = str_len - 1; i >= 0; i--)
 {
 key[j] = name[i] + i;
 j++;
 }
+key[j] = 0;
 printf("%s", key);
 free(key);
 return (0);
