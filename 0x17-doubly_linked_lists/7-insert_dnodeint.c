@@ -18,6 +18,16 @@ if (new == NULL)
 {
 return (NULL);
 }
+new->n = n;
+new->next = NULL;
+new->prev = NULL;
+if (idx == 0)
+{
+new->next = *h;
+(*h)->prev = new;
+*h = new;
+return (new);
+}
 while (tmp != NULL && count < idx - 1)
 {
 tmp = tmp->next;
@@ -27,7 +37,6 @@ if (tmp == NULL)
 {
 return (NULL);
 }
-new->n = n;
 new->next = tmp->next;
 new->prev = tmp;
 if (tmp->next != NULL)
