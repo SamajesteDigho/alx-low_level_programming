@@ -20,6 +20,10 @@ if (index == 0)
 {
 del = *head;
 *head = del->next;
+if (*head != NULL)
+{
+(*head)->prev = NULL;
+}
 del->next = NULL;
 free(del);
 return (1);
