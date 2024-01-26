@@ -23,8 +23,10 @@ while (tmp != NULL && count < idx - 1)
 tmp = tmp->next;
 count++;
 }
-if (count < idx - 1 || tmp == NULL)
+if (tmp == NULL)
+{
 return (NULL);
+}
 new->n = n;
 new->next = tmp->next;
 new->prev = tmp;
