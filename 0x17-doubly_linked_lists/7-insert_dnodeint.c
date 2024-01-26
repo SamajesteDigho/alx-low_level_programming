@@ -15,9 +15,7 @@ count = 0;
 tmp = *h;
 new = (dlistint_t *)malloc(sizeof(dlistint_t));
 if (new == NULL)
-{
 return (NULL);
-}
 new->n = n;
 new->next = NULL;
 new->prev = NULL;

@@ -19,9 +19,9 @@ exit(98);
 }
 name = argv[1];
 str_len = strlen(name);
-key = (char *) malloc(str_len * sizeof(char));
+key = (char *) malloc(str_len *sizeof(char));
 j = 0;
-for(i = str_len - 1; i >= 0; i--)
+for (i = str_len - 1; i >= 0; i--)
 {
 key[j] = name[i] + i;
 j++;
