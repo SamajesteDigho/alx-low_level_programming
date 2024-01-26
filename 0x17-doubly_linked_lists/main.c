@@ -7,58 +7,18 @@
 int main(void)
 {
 dlistint_t *head;
+	dlistint_t *node;
+	size_t n;
 
-head = NULL;
-add_dnodeint_end(&head, 0);
-add_dnodeint_end(&head, 1);
-add_dnodeint_end(&head, 2);
-add_dnodeint_end(&head, 3);
-add_dnodeint_end(&head, 4);
-add_dnodeint_end(&head, 98);
-add_dnodeint_end(&head, 402);
-add_dnodeint_end(&head, 1024);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 5);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-printf("-----------------\n");
-delete_dnodeint_at_index(&head, 0);
-print_dlistint(head);
-return (0);
+	head = NULL;
+	node = insert_dnodeint_at_index(&head, 0, 98);
+	if (node)
+		printf("-> %d\n", node->n);
+	else
+		printf("(nil)\n");
+	n = print_dlistint(head);
+	printf("-> %lu elements\n", n);
+	n = _print_dlistint_backward(head);
+	printf("-> %lu elements\n", n);
+	return (0);
 }

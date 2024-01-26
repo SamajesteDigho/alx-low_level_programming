@@ -23,6 +23,11 @@ new->next = NULL;
 new->prev = NULL;
 if (idx == 0)
 {
+if (*h == NULL)
+{
+*h = new;
+return (new);
+}
 new->next = *h;
 new->prev = (*h)->prev;
 (*h)->prev = new;
