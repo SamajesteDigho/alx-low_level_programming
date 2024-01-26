@@ -40,7 +40,10 @@ return (-1);
 del = tmp;
 tmp = tmp->prev;
 tmp->next = del->next;
+if (del->next != NULL)
+{
 del->next->prev = tmp;
+}
 del->next = NULL;
 del->prev = NULL;
 free(del);
