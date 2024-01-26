@@ -24,6 +24,7 @@ new->prev = NULL;
 if (idx == 0)
 {
 new->next = *h;
+new->prev = (*h)->prev;
 (*h)->prev = new;
 *h = new;
 return (new);
