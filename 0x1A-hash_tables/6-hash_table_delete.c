@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * hash_table_delete - Delete Hash Table
  * @ht: Hash Table

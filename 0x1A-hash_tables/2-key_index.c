@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * key_index - Get reframed hash
  * @key: Key to be hashed
