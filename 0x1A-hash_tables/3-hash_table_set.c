@@ -9,7 +9,7 @@
 */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-unsigned long hash = key_index((const unsigned char*)key, ht->size);
+unsigned long hash = key_index((const unsigned char *)key, ht->size);
 hash_node_t *node = (hash_node_t *) malloc(sizeof(hash_node_t));
 hash_node_t *temp = ht->array[hash];
 if (node == NULL)
