@@ -1,23 +1,4 @@
-#include "100-sorted_hash_table.h"
-/**
- * key_index - using DJB2 hashing
- * @str: The key to hash
- * @size: Size of the hash table
- * Decription: This function permits to hash as string using the DJB2 algo
- * Return: hashed key
- */
-unsigned long int key_index(const unsigned char *str, unsigned long int size)
-{
-unsigned long int hash;
-int c;
-hash = 5381;
-while ((c = *str++))
-{
-hash = ((hash << 5) + hash) +c;
-}
-return (hash % size);
-}
-
+#include "hash_tables.h"
 /**
  * shash_table_create - Create SHASH TABLE
  * @size: The size of the table to be created
