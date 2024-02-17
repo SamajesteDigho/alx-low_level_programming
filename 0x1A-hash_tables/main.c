@@ -1,4 +1,28 @@
-#include "100-sorted_hash_table.h"
+#include "hash_tables.h"
+
+
+void _hash_table_print(const hash_table_t *ht)
+{
+	unsigned long int i;
+	hash_node_t *p;
+	char n;
+
+	for (i = 0; ht && i < ht->size; i++)
+	{
+		p = ht->array[i];
+		printf("[%lu]", i);
+		n = 0;
+		while (p)
+		{
+			if (n)
+				printf(", ");
+			printf("'%s': '%s'", p->key, p->value);
+			p = p-> next;
+			n = 1;
+		}
+		printf("\n");
+	}
+}
 
 /**
  * main - check the code for
@@ -7,26 +31,9 @@
  */
 int main(void)
 {
-shash_table_t *ht;
+    int ret;
 
-ht = shash_table_create(1024);
-shash_table_set(ht, "y", "0");
-shash_table_print(ht);
-shash_table_set(ht, "j", "1");
-shash_table_print(ht);
-shash_table_set(ht, "c", "2");
-shash_table_print(ht);
-shash_table_set(ht, "b", "3");
-shash_table_print(ht);
-shash_table_set(ht, "z", "4");
-shash_table_print(ht);
-shash_table_set(ht, "n", "5");
-shash_table_print(ht);
-shash_table_set(ht, "a", "6");
-shash_table_print(ht);
-shash_table_set(ht, "m", "7");
-shash_table_print(ht);
-shash_table_print_rev(ht);
-shash_table_delete(ht);
-return (EXIT_SUCCESS);
+	ret = hash_table_set(NULL, "Holberton", "is cool");
+	printf("%d\n", ret);
+	return (EXIT_SUCCESS);
 }
