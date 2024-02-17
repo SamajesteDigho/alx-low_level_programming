@@ -31,9 +31,9 @@ void _hash_table_print(const hash_table_t *ht)
  */
 int main(void)
 {
-    int ret;
+    char *value;
 
-	ret = hash_table_set(NULL, "Holberton", "is cool");
-	printf("%d\n", ret);
+	value = hash_table_get(NULL, "Canada");
+	printf("%s:%s\n", "Canada", value);
 	return (EXIT_SUCCESS);
 }

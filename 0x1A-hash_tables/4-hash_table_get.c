@@ -4,16 +4,18 @@
  * @ht: Hash Table
  * @key: Key the value have to be gotten
  * Description: This function permits to get a value given the key
- * Returns: The value at the given key
-*/
+ * Return: The value at the given key
+ */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-unsigned long hash = key_index((const unsigned char *)key, ht->size);
-hash_node_t *temp = ht->array[hash];
-if (temp == NULL)
+unsigned long hash;
+hash_node_t *temp;
+if (ht == NULL)
 {
 return (NULL);
 }
+hash = key_index((const unsigned char *)key, ht->size);
+temp = ht->array[hash];
 while (temp != NULL)
 {
 if (strcmp(key, temp->key) == 0)
