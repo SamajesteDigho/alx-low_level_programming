@@ -120,7 +120,7 @@ return (1);
  * shash_table_get - Get value
  * @ht: Structured Hash Table
  * @key: Key whose value have to be gotten
- * Description: Get the value associated to a given key
+ * Description: Get the value associated to a given key.
  * Return: The value associated to the key if found or NULL otherwise
  */
 char *shash_table_get(const shash_table_t *ht, const char *key)
