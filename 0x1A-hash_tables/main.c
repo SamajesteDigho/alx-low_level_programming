@@ -1,13 +1,14 @@
 #include "hash_tables.h"
 
-
-void _hash_table_print(const hash_table_t *ht)
+void _shash_table_print_array(const shash_table_t *ht)
 {
 	unsigned long int i;
-	hash_node_t *p;
+	shash_node_t *p;
 	char n;
 
-	for (i = 0; ht && i < ht->size; i++)
+	if (!ht)
+		return;
+	for (i = 0; i < ht->size; i++)
 	{
 		p = ht->array[i];
 		printf("[%lu]", i);
@@ -24,6 +25,30 @@ void _hash_table_print(const hash_table_t *ht)
 	}
 }
 
+void _shash_table_print_sorted(const shash_table_t *ht)
+{
+	shash_node_t *p;
+	char n;
+
+	if (!ht)
+		return;
+	printf("{");
+	n = 0;
+	p = ht->shead;
+	while (p)
+	{
+		if (n == 1)
+		{
+			printf(", ");
+		}
+		printf("'%s': '%s'", p->key, p->value);
+		n = 1;
+		p = p->snext;
+	}
+	printf("}\n");
+}
+
+
 /**
  * main - check the code for
  *
@@ -31,9 +56,5 @@ void _hash_table_print(const hash_table_t *ht)
  */
 int main(void)
 {
-    char *value;
-
-	value = hash_table_get(NULL, "Canada");
-	printf("%s:%s\n", "Canada", value);
-	return (EXIT_SUCCESS);
+return (EXIT_SUCCESS);
 }
