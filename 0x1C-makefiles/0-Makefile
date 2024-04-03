@@ -2,8 +2,3 @@ all: school
 
 school:
     gcc main.c school.c -o school
-
-.PHONY: all clean
-
-clean:
-    echo "Cleaning..."
