@@ -1,3 +1,6 @@
+# Usage:
+# make        # compile all binary
+
 CC = gcc
 SRC = main.c source.c
 all: SRC
