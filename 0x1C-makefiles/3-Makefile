@@ -1,20 +1,20 @@
 NAME = school
 CC = gcc
 SRC = main.c school.c
-OBJ = main.o school.o
+OBJ = $(SRC:.c=.o)
 RM = rm
 
 all: $(OBJ)
-    $(CC) $(OBJ) -o $(NAME)
+	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-    echo "cleaning"
+	$(RM) *~ $(NAME)
 
 oclean:
-    echo "deleting objects"
+	$(RM) $(OBJ)
 
 fclean:
-    echo "deleting files"
+	clean oclean
 
 re:
-    echo "re function"
+	fclean all
