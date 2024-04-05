@@ -3,6 +3,7 @@
     Here the documentation of the module
 """
 
+
 def island_perimeter(grid):
     """Here the documentation of the function"""
     if grid is None or len(grid) == 0:
