@@ -61,5 +61,7 @@ return (search_algo(array, start, mid, value));
  */
 int binary_search(int *array, size_t size, int value)
 {
+if (array == NULL || size == 0)
+return (-1);
 return (search_algo(array, 0, size, value));
 }
