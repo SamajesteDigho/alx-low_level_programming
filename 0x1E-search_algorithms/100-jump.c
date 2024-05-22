@@ -18,6 +18,8 @@ b_size = sqrt(size);
 low = 0;
 top = b_size;
 printf("Value checked array[%ld] = [%d]\n", low, array[low]);
+if (array[low] > value)
+return (-1);
 while (top + 1 <= size)
 {
 if (value <= array[top])
