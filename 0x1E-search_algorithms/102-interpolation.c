@@ -1,7 +1,6 @@
 #include "search_algos.h"
-
 /**
- * find_interpolation_index: Find Interpolation Index
+ * find_interpolation_index - Find Interpolation Index
  * @arr: Array concerned
  * @lw: Start point of the array to be worked on
  * @hg: End point of the array to be worked on
@@ -15,7 +14,7 @@ return (lw + (((double)(hg - lw) / (arr[hg] - arr[lw])) * (vl - arr[lw])));
 }
 
 /**
- * interpolation: Interpolation Mechanism
+ * interpolation - Interpolation Mechanism
  * @array: Array concerned
  * @start: Start point of the array to be worked on
  * @end: End point of the array to be worked on
@@ -54,7 +53,7 @@ return (interpolation(array, idx + 1, end, value));
 }
 
 /**
- * interpolation_search: Interpolation Search
+ * interpolation_search - Interpolation Search
  * @array: Array
  * @size: Size
  * @value: Value
