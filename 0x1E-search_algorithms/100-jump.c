@@ -19,7 +19,7 @@ low = 0;
 top = 0;
 while (top < size)
 {
-if (value < array[top])
+if (value <= array[top])
 {
 break;
 }
