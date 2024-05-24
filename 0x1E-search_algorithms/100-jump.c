@@ -20,17 +20,13 @@ top = 0;
 while (top < size)
 {
 if (value <= array[top])
-{
 break;
-}
 printf("Value checked array[%ld] = [%d]\n", top, array[top]);
 low = top;
 top += b_size;
 }
 if (top > size)
-{
 top = size;
-}
 printf("Value found between indexes [%ld] and [%ld]\n", low, top);
 for (i = low; i < top; i++)
 {
